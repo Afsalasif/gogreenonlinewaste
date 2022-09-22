@@ -1,0 +1,564 @@
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <!--home-->
+    <div id="home">
+        <!--navigation-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a href="index.html" class="navbar-brand">
+                <p><span>go</span>green </p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav-link">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="margin-left: .2rem;">
+                               {{#if user}}
+                                   <P style="text-transform: uppercase;">{{user.Name}}</P>
+                                    {{else}}
+                                    ACCOUNT
+                               {{/if}}
+                               
+                                
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                {{#if user}}
+                                  <a class="dropdown-item" href="/logout">LOGOUT</a>
+                                    {{else}}
+                                   <a class="dropdown-item" href="/login">LOGIN</a>
+                                <a class="dropdown-item" href="/signup">REGISTER</a>
+
+                               {{/if}}
+                                
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+        <!--imageslider-->
+        <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel" data-intervel="300">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1">
+
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2">
+
+                </li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active"
+                    style="background-image: url(http://webdesign-finder.com/gogreen/wp-content/uploads/2017/06/slide01.jpg);">
+                    <div class="carousel-caption text-center">
+                        <h1> we are<br><span style="color: crimson;">go</span> <span style="color: teal;">green</span>
+                        </h1>
+                        <h3 style="color: black;">We can solve your corporate IT disposition needs quickly and
+                            professionally.
+                            Save Your community, Save Your planet</h3>
+
+                        <a class="btn btn-outline-light btn-lg" href="/homepage">schedule pickup </a>
+                        <a class="btn btn-outline-dark btn-lg" href="/view-order">view order </a>
+                    </div>
+                </div>
+                <div class="carousel-item "
+                    style="background-image: url(https://template65291.motopreview.com/mt-demo/65200/65291/mt-content/uploads/2017/11/mt-1238-home-img06.jpg);">
+                    <div class="carousel-caption text-center">
+                        <h1> we are<br><span style="color: crimson;">go</span> <span style="color: teal;">green</span>
+                        </h1>
+                        <h3 style="color: black;">We can solve your corporate IT disposition needs quickly and
+                            professionally.
+                            Save Your community, Save Your planet</h3>
+
+                        <a class="btn btn-outline-light btn-lg" href="/pickup">schedule pickup </a>
+                        <a class="btn btn-outline-light btn-lg" href="/view-order">schedule pickup </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item "
+                    style="background-image: url(https://content.unops.org/photos/News-and-Stories/Features/_image2880x1400/Sri-Lanka-Kattankudy-Waste-Management-EU-Sri-Lanka-SDDP-1.jpg?mtime=20180122145751);">
+
+                    <div class="carousel-caption text-center">
+                        <h1 style="color: black;"> we are<br><span style="color: crimson;">go</span> <span
+                                style="color: teal;">green</span> </h1>
+                        <h3 style="color:crimson;">do you want this situvation</h3>
+
+                        <a class="btn btn-outline-light btn-lg" href="/pickup">schedule pickup </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="prev">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+
+        <!--endimageslider-->
+
+
+
+    </div>
+    <!--end home-->
+    <div id="course" class="offset">
+        <div class="col-12 narrow text-center">
+            <p class="lead">"every beard has a story"</p>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio" class="offset">
+
+        <div class="jumbotron container-fluid">
+            <div class="col-12 text-center">
+                <h3 class="heading"><span>p</span>ort<span>f</span>olio</h3>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="row no-padding">
+                <div class="col-sm-4">
+                    <div class="portfolio">
+                        <a href="./img/portfolio/11.jpg" target="
+                        -blank">
+                            <img src="./img/portfolio/11.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio">
+                        <a href="./img/portfolio/12.jpeg.jpg" target="
+                        -blank">
+                            <img src="./img/portfolio/12.jpeg.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio">
+                        <a href="./img/portfolio/13.jpg" target="
+                        -blank">
+                            <img src="./img/portfolio/13.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio">
+                        <a href="./img/portfolio/14.jpg" target="
+                        -blank">
+                            <img src="./img/portfolio/14.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio">
+                        <a href="./img/portfolio/15.jpg" target="
+                        -blank">
+                            <img src="./img/portfolio/15.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio">
+                        <a href="./img/portfolio/16.jpg" target="
+                        -blank">
+                            <img src="./img/portfolio/16.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="narrow text-center">
+                    <div class="col-12">
+                        <p>"First whiskey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of jumbo-->
+
+    </div>
+    <!--end poetfolio-->
+    <div class="services" id="services">
+        <div class="heads container" style="text-align: center;">
+            <h1>welcome to <span style="color: crimson;">go</span> <span style="color: teal;"> green</span></h1>
+            <p>GoGreen is a Family-owned company located in San Diego, California proudly serving individuals and
+                businesses in Southern California with their computers and electronics upgrade needs, accepting
+                computers and electronics waste in any conditions.</p>
+        </div>
+        <div class="servic container" style="display: flex;">
+
+            <div class="card cd">
+                <div class="imgs"><img src="https://img.icons8.com/pastel-glyph/50/000000/pickup-point.png" /></div>
+
+                <div class="head">
+                    <h3>pickup</h3>
+                </div>
+                <p style="text-align: center;">We offer business pickup services to safely recycle your electronics in a
+                    safe manner</p>
+            </div>
+
+
+
+            <div class="card cd">
+                <div class="imgs"><img src="https://img.icons8.com/ios-glyphs/50/000000/recycle-sign.png" /></div>
+
+                <div class="head">
+                    <h3>Recycling</h3>
+                </div>
+                <p style="text-align: center;">Food and Organic
+                    Waste Pickup
+                    Recycling Pickup
+                    Battery Recycling</p>
+            </div>
+
+
+            <div class="card cd">
+                <div class="imgs"><img src="https://img.icons8.com/material-rounded/30/000000/waste-sorting.png" />
+                </div>
+
+                <div class="head">
+                    <h3>other services</h3>
+                </div>
+                <p style="text-align: center;">Landfill & FacilitiesBulk Waste PickupDocument and Product Destruction
+                </p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!--team-->
+    <div id="team" class="offset">
+        <div class="col-12 text-center">
+            <h3 class="heading">about <span> us</span></h3>
+            <div class="heading-underline"></div>
+        </div>
+        <div class="row about-img">
+            <div class="col-12 col-md-6">
+
+                <img style="margin-top: 2rem; "
+                    src="https://template65291.motopreview.com/mt-demo/65200/65291/mt-content/uploads/2017/11/mt-1238-home-img05.jpg"
+                    alt="" class="card-img-top">
+
+
+            </div>
+            <div class="col-md-6">
+                <div class=" text-center">
+
+                    <div class="card-body" style="margin-top: 0;">
+                        <p>
+                        <h5 style="text-transform: uppercase;">Our<span style="color: teal;"> Mission</span></h5><br>
+                        <p style="text-align: left;">We have invested in developing waste solutions for a changing
+                            world. Today, this includes not just disposal and recycling, but personal counseling to help
+                            customers achieve their green goals, including zero waste.Our mission is to keep as much
+                            electronic waste from ending up in local landfills as we can
+
+                        </p>
+
+                        </p>
+                        <p style="font-size: larger; color:crimson">Environmental and Economic Sustainability</p>
+                        <p style="text-align: left;">We’re the leading provider of comprehensive waste management
+                            services, providing services that range from collection and disposal to recycling and
+                            renewable energy generation,We offer you Sustainability</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--end team-->
+    <!--contact-->
+    <div id="contact" class="offset">
+
+        <footer>
+            <div class="row justify-content-center">
+                <div class=" col-md-5 ">
+                    <h1 style="text-transform: uppercase;"> <span>go</span>green</h1>
+                    <div class="r1">
+                        <strong style="color: black;">Contact Info</strong>
+                        <p>+91 7907021266<br>imransakkeer21@gmail.com </p>
+                    </div>
+                    <div class="r2">
+                        <a href="https://www.facebook.com/imran.sakkeer.13" target="_blank"> <img
+                                src="https://img.icons8.com/metro/30/000000/facebook-new.png" />
+                        </a>
+                        <a href="https://www.instagram.com/imran_sakkeer/" target="_blank"> <img
+                                src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png" /></a>
+                    </div>
+                </div>
+                <hr class="socket">
+                &copy; afsal
+            </div>
+        </footer>
+
+    </div>
+    <!--endcontact-->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <script src="./bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        body {
+            overflow-x: hidden;
+            font-family: 'lato', sans-serif;
+            color: #505962;
+            max-width: 100%;
+
+
+        }
+
+        .offset::before {
+            height: 4rem;
+            margin-top: -4rem;
+            content: '';
+            display: block;
+        }
+
+        .narrow {
+            width: 75%;
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+
+
+        /*navbar*/
+        .navbar {
+            max-width: 100%;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: .9rem;
+            background: rgba(0, 0, 0, .6) !important;
+        }
+
+        .navbar .navbar-brand p {
+            color: #1ebba3;
+            text-align: center;
+            font-size: 1.8rem;
+
+
+        }
+
+        .navbar .navbar-brand p span {
+            color: crimson;
+        }
+
+        .navbar-nav {
+            padding-right: .7rem;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            padding-top: .8rem;
+
+        }
+
+        .navbar-dark .navbar-nav .nav-link.active,
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #1ebba3
+        }
+
+        /*end navbar*/
+        /*slider*/
+        .carousel-item {
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 38%;
+            text-transform: uppercase;
+            width: 100%;
+            right: 0;
+            left: 0;
+        }
+
+        .carousel-caption h1 {
+            font-size: 3.8rem;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            text-shadow: .1rem .1rem .8rem black;
+            padding-bottom: 1rem;
+        }
+
+        .btn-lg {
+            border-width: medium;
+            border-radius: 0;
+            font-size: 1.1rem;
+        }
+
+        .jumbotron {
+            border-radius: 0;
+            padding: 3rem 0 2rem;
+        }
+
+        h3.heading {
+            font-size: 1.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 1.9rem;
+        }
+
+        h3.heading span {
+            color: crimson;
+        }
+
+        .heading-underline {
+            width: 3rem;
+            height: .2rem;
+            background-color: #1ebba3;
+            margin: 0 auto 2rem;
+        }
+
+        /*portfolio*/
+        .portfolio img {
+            max-width: 100%;
+            transition: transform .5s ease;
+
+
+        }
+
+        .row.no-padding [class*=col-] {
+            padding: 0;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.1);
+            cursor: zoom-in;
+        }
+
+        .portfolio {
+            overflow: hidden;
+        }
+
+        .card {
+            margin: 2rem;
+            width: 18rem;
+        }
+
+        /*contact*/
+        #services {
+            justify-content: center;
+        }
+
+        #services .heads h1 {
+            text-transform: uppercase;
+        }
+
+        #services .heads p {
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        #services .cd {
+            align-items: center;
+            margin-bottom: 3rem;
+            box-shadow: 9px 11px 7px -2px rgba(190, 0, 54, 0.47);
+        }
+
+
+        #services .cd img {
+            height: 70px;
+            width: 70px;
+            margin: 1.5rem;
+        }
+
+        #services .cd h3 {
+            color: teal;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+        }
+
+        #services .cd p {
+            margin: 1rem;
+            font-weight: lighter;
+            font-size: small;
+        }
+
+        #team .about-img {
+            align-items: center;
+        }
+
+        #team .about-img img {
+            max-width: 75%;
+            margin-left: 18%;
+
+            margin-bottom: 7rem;
+        }
+
+
+        footer {
+            background-color: #40474e;
+            color: white;
+            padding: 2rem 0 3rem;
+            margin-top: 1rem;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        footer h1 {
+            font-size: 2rem;
+            height: 3rem;
+            margin: 1.5rem 0;
+            color: teal;
+            margin-left: 20%;
+        }
+
+        footer h1 span {
+            color: crimson;
+        }
+
+        footer a img {
+            width: 1.7rem;
+            height: 1.7rem;
+
+        }
+
+        hr.socket {
+            border-top: .2rem solid #666b71;
+            width: 100%;
+
+        }
+
+        footer .r2 {
+            margin-left: 45%;
+        }
+
+        footer .r1 {
+            margin-left: 35%;
+        }
+
+        #team .card-body {
+            align-items: center;
+        }
+    </style>
+</body>
